@@ -23,8 +23,6 @@
   </head>
 
   <body>
-    <%# <%= yield %> %>
-
     <div class="navbar navbar-default navbar-static-top">
 
 <div class="container">
@@ -61,8 +59,8 @@
 
 <div class="col-lg-9">
 
+<h1><%= yield :header_title %> <small><%= yield :header_sub_title %></small></h1>
 <%= yield %>
-
 </div>
 
 <div class="col-lg-3">
