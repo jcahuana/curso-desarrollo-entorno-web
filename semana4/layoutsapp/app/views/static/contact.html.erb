@@ -7,14 +7,18 @@
   <h3>Envíanos tus datos de contacto</h3>
 <% end %>
 
-<%= form_for :upc, :html => {:method => :post}, :url => {:controller => 'static', :action => 'mimetodo'} do |f| %>
+<%= form_for :upc, :html => {:method => :post, :class => "needs-validation", :novalidate => "novalidate"}, :url => {:controller => 'static', :action => 'mimetodo'} do |f| %>
 
   <%= f.label  :titulo %>
-  <%= f.text_field  :titulo, :class => 'form-control' %>
+  <%= f.text_field  :titulo, {:class => 'form-control', :required => "required"} %>
+  <div class="valid-feedback">Válido.</div>
+  <div class="invalid-feedback">Por favor llenar el título.</div>
   <br >
 
   <%= f.label  :descripcion %>
-  <%= f.text_area  :descripcion, :class => 'form-control' %>
+  <%= f.text_area  :descripcion, {:class => 'form-control', :required => "required"} %>
+  <div class="valid-feedback">Válido.</div>
+  <div class="invalid-feedback">Por favor llenar la descripción.</div>
   <br />
 
   <%= f.submit "Enviar datos", :class => "btn btn-primary" %>

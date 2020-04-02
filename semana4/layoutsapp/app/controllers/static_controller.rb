@@ -18,5 +18,12 @@ class StaticController < ApplicationController
   end
 
   def mimetodo
+    puts "Datos recibidos del formulario."
+
+    a = params[:upc][:titulo]
+    b = params[:upc][:descripcion]
+
+    puts "Titulo enviado: #{a}"
+    puts "Descripción enviada: #{b}"
   end
 end

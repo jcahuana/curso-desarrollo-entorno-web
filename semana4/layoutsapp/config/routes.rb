@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :alumnos
   # get 'static/about'
   get 'about', controller: :static, action: :about, alias: 'about'
 
