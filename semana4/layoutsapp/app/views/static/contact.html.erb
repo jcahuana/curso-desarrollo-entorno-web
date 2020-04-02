@@ -1,0 +1,16 @@
+<%= content_for :head do %>
+    <title>Contact US</title>
+<% end %>
+
+<%= content_for :intro do %>
+    <h1>Contact US</h1>
+    <h3>Envíanos tus datos de contacto</h3>
+<% end %>
+
+<%= form_for :upc, :html => {:method => :get}, :url => {:controller => 'static', :action => 'contact'} do |f| %>
+
+  <%= f.label  :titulo %>
+  <%= f.text_field  :titulo, :class => 'form-control' %>
+  <br >
+
+<% end %>
