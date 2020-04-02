@@ -15,6 +15,8 @@ class StaticController < ApplicationController
   end
 
   def contact
-    render :about
+  end
+
+  def mimetodo
   end
 end

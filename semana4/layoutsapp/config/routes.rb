@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # get 'static/contact'
   get 'contact', controller: :static, action: :contact, alias: 'contact'
 
+  post 'static/mimetodo'
+
   get 'static/mypage'
 
   # get 'home/index'
