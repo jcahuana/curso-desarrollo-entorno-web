@@ -1,7 +1,0 @@
-Logro:
-
-Realizar la capa de negocio de una aplicación.
-
-
-Controladores:
-

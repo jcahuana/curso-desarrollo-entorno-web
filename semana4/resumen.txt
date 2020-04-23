@@ -1,7 +1,0 @@
-- Uso de formularios
-- Creación de mantenedor para poder hacer validaciones en el lado del servidor.
-  -> Se usa el comando "rails g scaffold Alumno nombres:string dni:string email:string email_confirmation:string"
-  -> Un scaffold sirve para crear un modelo, crear tabla en la base de datos, las vistas y el controlador.
-
-- VALIDACIONES DE FORMULARIOS
-  -> Se puede ver todas las validaciones existentes en https://guides.rubyonrails.org/active_record_validations.html
