@@ -1,0 +1,17 @@
+Comandos para la aplicación App
+
+Esta app esta usando MySQL
+
+
+> rails g scaffold Student name:string lastname:string dni:string
+> rails g scaffold Tutor name:string lastname:string dni:string
+> rails g scaffold Klass name:string credit:integer student:references tutor:references
+
+# Crea la base de datos vacía
+> rake db:create
+
+
+> rake db:migrate
+
+>
+
